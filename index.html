@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review job matches, inspect qualification evidence, and organize your application search with Application Desk.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Application Desk · Your career workspace</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <header>
+    <div><div class="eyebrow">YOUR CAREER WORKSPACE</div><h1>Application desk<span>.</span></h1><p>Find your fit. Keep your next move in view.</p></div>
+    <a class="button secondary" href="https://github.com/dryzzl/mass-application-program-site" target="_blank" rel="noopener noreferrer">View project ↗</a>
+  </header>
+
+  <section class="intro" aria-label="Workspace overview">
+    <div><span class="badge">WEB WORKSPACE</span><h2>Your search, in one place.</h2><p>Review matches against a 90% threshold, see the evidence behind each qualification, and open the opportunities that fit.</p><div class="intro-actions"><button id="import-button">Import job report</button><button class="secondary" id="demo-button">Explore example jobs</button></div><input id="file-input" type="file" accept=".json,application/json" hidden><p class="privacy">Imported reports stay in this browser tab. They are not uploaded or saved to this website.</p></div>
+    <aside><div class="target">90<span>%</span></div><p>Match threshold</p><small>Supported qualifications, not a hiring prediction.</small></aside>
+  </section>
+  <p id="message" role="status" aria-live="polite"></p>
+
+  <section class="boards" aria-labelledby="boards-heading"><div class="section-heading"><h2 id="boards-heading">Your job boards</h2><span class="muted">Sign in directly on each site</span></div><div class="board-grid">
+    <article class="board"><div class="brand linkedin">in</div><div><h3>LinkedIn</h3><p>Network & opportunities</p></div><div class="board-actions"><a href="https://www.linkedin.com/uas/login" target="_blank" rel="noopener noreferrer">Sign in ↗</a><a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer">Browse jobs ↗</a></div></article>
+    <article class="board"><div class="brand indeed">i</div><div><h3>Indeed</h3><p>Search across employers</p></div><div class="board-actions"><a href="https://secure.indeed.com/auth" target="_blank" rel="noopener noreferrer">Sign in ↗</a><a href="https://www.indeed.com/" target="_blank" rel="noopener noreferrer">Browse jobs ↗</a></div></article>
+    <article class="board"><div class="brand zip">z</div><div><h3>ZipRecruiter</h3><p>Discover your next role</p></div><div class="board-actions"><a href="https://www.ziprecruiter.com/login" target="_blank" rel="noopener noreferrer">Sign in ↗</a><a href="https://www.ziprecruiter.com/jobs-search" target="_blank" rel="noopener noreferrer">Browse jobs ↗</a></div></article>
+  </div><p class="hint">Logins stay with each provider. This website cannot read your passwords, check your sign-in status, or submit applications automatically.</p></section>
+
+  <section aria-label="Application overview" id="stats" class="stats"></section>
+  <section class="workspace" aria-labelledby="opportunities-heading">
+    <div class="section-heading"><div><h2 id="opportunities-heading">Your opportunities</h2><p id="dataset-label" class="muted">No report loaded</p></div><div class="tools"><button id="export-button" class="secondary" disabled>Export report</button><button id="clear-button" class="quiet" disabled>Clear</button></div></div>
+    <div class="toolbar"><label class="search"><span class="sr-only">Search opportunities</span><input id="search" placeholder="Search title, company or location" type="search"></label><label><span class="sr-only">Filter opportunities</span><select id="filter"><option value="all">All opportunities</option><option value="eligible">Eligible matches</option><option value="review">Needs review</option><option value="submitted">Submitted</option><option value="blocked">Blocked / uncertain</option></select></label></div>
+    <div id="jobs"></div>
+  </section>
+
+  <section class="local" aria-labelledby="local-heading"><div><div class="eyebrow">THE LOCAL COMPANION</div><h2 id="local-heading">Ready to run a batch?</h2><p>The desktop program handles resume processing, job discovery and supported Lever submissions. Start it on your computer with <code>.\run.ps1 serve</code>, or export a report with <code>.\run.ps1 report</code> and import <code>data/report.json</code> here.</p></div><a class="button secondary" href="http://127.0.0.1:8765/" target="_blank" rel="noopener noreferrer">Open local app ↗</a></section>
+  <footer><span>Application Desk</span><p>Your data stays yours. No account required here.</p><a href="https://github.com/dryzzl/mass-application-program-site#readme" target="_blank" rel="noopener noreferrer">Setup guide ↗</a></footer>
+</main>
+</body>
+</html>
