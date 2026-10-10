@@ -2,6 +2,10 @@
 const $ = id => document.getElementById(id);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
 const curated = (window.curatedJobs || []).map(job => ({status:'new', job, match:{score:0, assessed:false, eligible:false, reasons:['Resume match not assessed; review the complete employer posting before applying.'], requirements:[]}}));
+let publicMode = true;
+let publicRows = structuredClone(curated);
+let feedMetadata = null;
+window.feedLoaded = false;
 let jobs = structuredClone(curated);
 let sourceLabel = 'US entry-level postings · Required experience: no more than 1 year · Checked October 5, 2026';
 
@@ -28,16 +32,16 @@ function validateReport(value) {
 }
 
 function render() {
-  const stats = [['Opportunities', jobs.length], ['Eligible matches', jobs.filter(r => r.match.eligible).length], ['Submitted', jobs.filter(r => r.status === 'submitted').length], ['Needs review', jobs.filter(r => !r.job.requirements_reviewed).length]];
+  const stats = [['Opportunities', jobs.length], ['Recommended · 90%+', jobs.filter(r => r.match.eligible).length], ['Submitted', jobs.filter(r => r.status === 'submitted').length], ['Needs review', jobs.filter(r => !r.match.eligible).length]];
   $('stats').innerHTML = stats.map(([label, count]) => `<div class="stat"><span>${label}</span><strong>${count}</strong></div>`).join('');
   $('dataset-label').textContent = sourceLabel;
   $('export-button').disabled = !jobs.length;
   $('clear-button').disabled = !jobs.length;
   const search = $('search').value.toLowerCase(), filter = $('filter').value;
-  const visible = jobs.filter(r => $('category').value === 'all' || r.job.category === $('category').value).filter(r => `${r.job.title} ${r.job.company} ${r.job.location || ''}`.toLowerCase().includes(search)).filter(r => filter === 'all' || filter === 'eligible' && r.match.eligible || filter === 'review' && !r.job.requirements_reviewed || filter === 'submitted' && r.status === 'submitted' || filter === 'blocked' && ['blocked', 'uncertain', 'submitting'].includes(r.status));
+  const visible = jobs.filter(r => $('category').value === 'all' || r.job.category === $('category').value).filter(r => `${r.job.title} ${r.job.company} ${r.job.location || ''}`.toLowerCase().includes(search)).filter(r => filter === 'all' || filter === 'eligible' && r.match.eligible || filter === 'review' && !r.match.eligible || filter === 'submitted' && r.status === 'submitted' || filter === 'blocked' && ['blocked', 'uncertain', 'submitting'].includes(r.status));
   $('jobs').innerHTML = visible.map(row => {
     const job = row.job, match = row.match;
-    return `<article class="job"><div class="job-top"><div><small>${escapeHTML(job.company)} · ${escapeHTML(job.location || 'Location unverified')}</small><h3>${escapeHTML(job.title)}</h3></div><span class="score">${match.assessed === false ? 'Not assessed' : escapeHTML(match.score) + '%'}</span></div><div class="pills"><span class="pill">${escapeHTML(row.status)}</span>${match.assessed === false ? '' : `<span class="pill">${escapeHTML(match.resume || 'Selected')} resume</span>`}<span class="pill">${match.assessed === false ? 'Needs matching' : match.eligible ? 'Eligible' : 'Review / not eligible'}</span></div>${match.reasons.length ? `<p class="reasons">${match.reasons.map(escapeHTML).join(' · ')}</p>` : ''}${job.experience ? `<p><strong>${escapeHTML(job.category)}</strong> · ${escapeHTML(job.experience)}</p><p>${escapeHTML(job.salary || '')} · Source checked ${escapeHTML(job.checked_on || 'Unknown')}</p>` : ''}${job.source_url && safeURL(job.source_url) ? `<p><a href="${escapeHTML(safeURL(job.source_url))}" target="_blank" rel="noopener noreferrer">View requirements source ↗</a></p>` : ''}${row.detail ? `<p>${escapeHTML(row.detail)}</p>` : ''}<a href="${escapeHTML(safeURL(job.url))}" target="_blank" rel="noopener noreferrer">Open application ↗</a><details><summary>Qualification evidence (${match.requirements.length})</summary>${match.requirements.map(req => `<div class="evidence"><span class="${req.passed ? 'pass' : 'fail'}">${req.passed ? 'Supported' : 'Unverified'}</span> · ${escapeHTML(req.text)}${req.mandatory ? ' [mandatory]' : ''}${req.preferred ? ' [preferred]' : ''}<p>${req.evidence.map(escapeHTML).join('<br>')}</p></div>`).join('')}</details><details><summary>${job.description_kind === 'summary' ? 'Posting summary · full details at employer' : 'Full job description'}</summary><pre class="description">${escapeHTML(job.description)}</pre></details></article>`;
+    return `<article class="job"><div class="job-top"><div><small>${escapeHTML(job.company)} · ${escapeHTML(job.location || 'Location unverified')}</small><h3>${escapeHTML(job.title)}</h3></div><span class="score">${match.assessed === false ? 'Not assessed' : escapeHTML(match.score) + '%'}</span></div><div class="pills"><span class="pill">${escapeHTML(row.status)}</span>${match.assessed === false ? '' : `<span class="pill">${escapeHTML(match.resume || 'Selected')} resume</span>`}<span class="pill">${match.assessed === false ? 'Needs matching' : match.eligible ? 'Recommended' : 'Qualifications to review'}</span></div>${match.reasons.length ? `<p class="reasons">${match.reasons.map(escapeHTML).join(' · ')}</p>` : ''}${job.experience ? `<p><strong>${escapeHTML(job.category)}</strong> · ${escapeHTML(job.experience)}</p><p>${escapeHTML(job.salary || '')} · Source checked ${escapeHTML(job.checked_on || 'Unknown')}</p>` : ''}${job.source_url && safeURL(job.source_url) ? `<p><a href="${escapeHTML(safeURL(job.source_url))}" target="_blank" rel="noopener noreferrer">View requirements source ↗</a></p>` : ''}${row.detail ? `<p>${escapeHTML(row.detail)}</p>` : ''}<a href="${escapeHTML(safeURL(job.url))}" target="_blank" rel="noopener noreferrer">Open application ↗</a><details><summary>Qualification evidence (${match.requirements.length})</summary>${match.requirements.map(req => `<div class="evidence"><span class="${req.passed ? 'pass' : 'fail'}">${req.passed ? 'Supported' : 'Unverified'}</span> · ${escapeHTML(req.text)}${req.mandatory ? ' [mandatory]' : ''}${req.preferred ? ' [preferred]' : ''}<p>${req.evidence.map(escapeHTML).join('<br>')}</p></div>`).join('')}</details><details><summary>${job.description_kind === 'summary' ? 'Posting summary · full details at employer' : 'Full job description'}</summary><pre class="description">${escapeHTML(job.description)}</pre></details></article>`;
   }).join('') || `<div class="empty"><span class="empty-symbol">◇</span><h3>${jobs.length ? 'No opportunities match this filter' : 'Your next opportunity starts here'}</h3><p>${jobs.length ? 'Try another search or switch to all opportunities.' : 'Import a report from the local app to review your matches, or explore the example jobs to see how it works.'}</p></div>`;
 }
 
@@ -53,7 +57,7 @@ $('file-input').addEventListener('change', async event => {
   try {
     if (file.size > 10 * 1024 * 1024) throw Error('Choose a JSON report smaller than 10 MB.');
     const parsed = validateReport(JSON.parse(await file.text()));
-    jobs = parsed; sourceLabel = `${file.name} · Imported into this tab only`;
+    publicMode = false; jobs = parsed; sourceLabel = `${file.name} · Imported into this tab only`;
     $('search').value = ''; $('filter').value = 'all'; $('category').value = 'all';
     $('message').textContent = `Loaded ${jobs.length} opportunities. This file was not uploaded. Closing or refreshing this tab clears it.`;
     render();
@@ -61,12 +65,12 @@ $('file-input').addEventListener('change', async event => {
   finally { event.target.value = ''; }
 });
 $('demo-button').addEventListener('click', () => {
-  jobs = structuredClone(demo); sourceLabel = 'EXAMPLE DATA · Fictional jobs, not real vacancies';
+  publicMode = false; jobs = structuredClone(demo); sourceLabel = 'EXAMPLE DATA · Fictional jobs, not real vacancies';
   $('search').value = ''; $('filter').value = 'all'; $('category').value = 'all';
   $('message').textContent = 'Showing fictional example jobs. No applications have been sent.'; render();
 });
 $('clear-button').addEventListener('click', () => {
-  jobs = []; sourceLabel = 'No report loaded'; $('search').value = ''; $('filter').value = 'all'; $('message').textContent = 'Report cleared from this tab.'; render();
+  restorePublic();
 });
 $('export-button').addEventListener('click', () => {
   const url = URL.createObjectURL(new Blob([JSON.stringify(jobs, null, 2)], {type:'application/json'}));
@@ -76,11 +80,48 @@ $('export-button').addEventListener('click', () => {
 $('search').addEventListener('input', render);
 $('filter').addEventListener('change', render);
 $('category').addEventListener('change', render);
-$('curated-button').addEventListener('click', () => {
-  jobs = structuredClone(curated);
-  sourceLabel = 'US entry-level postings · Required experience: no more than 1 year · Checked October 5, 2026';
+function restorePublic() {
+  publicMode = true;
+  jobs = structuredClone(publicRows);
   $('search').value = ''; $('filter').value = 'all'; $('category').value = 'all';
-  $('message').textContent = 'Loaded public posting summaries. Availability can change; check the employer link. Resume matches have not been assessed.';
+  sourceLabel = 'Daily US entry-level shortlist';
+  $('message').textContent = 'Public shortlist restored. Private imported reports have been cleared from this tab.';
   render();
-});
+  refreshFeed();
+}
+
+function showFreshness() {
+  const target = $('refresh-status');
+  if (!feedMetadata) {
+    target.textContent = 'Showing the initial listings. Latest refresh information is unavailable.';
+    return;
+  }
+  const age = Date.now() - Date.parse(feedMetadata.updated_at);
+  const stamp = new Date(feedMetadata.updated_at).toLocaleString('en-US', {timeZone:'America/Los_Angeles', dateStyle:'medium', timeStyle:'short'});
+  target.textContent = `Last research update: ${stamp} Pacific. ${age > 36 * 3600000 ? 'Refresh overdue — showing the last saved list. ' : ''}${feedMetadata.coverage}`;
+}
+
+async function refreshFeed() {
+  if (!publicMode) return;
+  try {
+    const response = await fetch('feed.json', {cache:'no-store'});
+    if (!response.ok) throw Error('Feed unavailable');
+    const feed = await response.json();
+    if (feed.schema_version !== 1 || !Number.isFinite(Date.parse(feed.updated_at)) || typeof feed.coverage !== 'string') throw Error('Invalid feed');
+    const rows = validateReport(feed.rows);
+    // An import can finish while this network request is in flight.
+    if (!publicMode) return;
+    publicRows = rows; feedMetadata = feed;
+    jobs = structuredClone(rows);
+    sourceLabel = 'Daily US entry-level shortlist · Recommended matches first';
+    showFreshness(); render();
+    $('feed-error').textContent = '';
+  } catch {
+    if (publicMode) $('feed-error').textContent = 'Latest shortlist could not be loaded. Showing the last available listings; try Refresh shortlist.';
+  } finally { window.feedLoaded = true; }
+}
+$('curated-button').addEventListener('click', restorePublic);
 render();
+showFreshness();
+refreshFeed();
+setInterval(() => { showFreshness(); refreshFeed(); }, 5 * 60 * 1000);

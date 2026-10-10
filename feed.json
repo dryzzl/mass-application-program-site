@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-10T01:42:33.265660+00:00",
+  "coverage": "Partial refresh: rechecked 5 saved postings and examined 8 additional leads. Added 2 review candidates. No verified 90% matches. Three saved application endpoints remain unverified. Broader search is still needed.",
+  "rows": [
+    {
+      "id": "bff5cc60521db4c94d61",
+      "status": "new",
+      "job": {
+        "title": "Software Engineer I, General",
+        "company": "INSTALILY.AI",
+        "url": "https://job-boards.greenhouse.io/instalilyai/jobs/4271757009",
+        "location": "New York, NY or San Francisco, CA \u00b7 Onsite, 5 days/week",
+        "category": "Software Engineer",
+        "country": "US",
+        "experience": "0\u20131 year as a software engineer",
+        "minimum_years": 0,
+        "checked_on": "2026-10-09",
+        "salary": "$100,000\u2013$120,000/year",
+        "description": "Develop an enterprise AI platform and collaborate on customer deployments. Requires backend programming fluency, a modern web stack, strong problem-solving and communication, and a completed LLM-based project or integration. A related technical bachelor\u2019s degree is listed, with demonstrated ability emphasized. Production cloud and CI/CD experience are preferred. This is an office-based role.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 66.67,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "Relevant technical bachelor degree",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Backend programming and web development",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Completed LLM application or integration",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Explain technical work to other teams",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Analytical troubleshooting",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Five-day onsite availability in New York or San Francisco",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Production cloud infrastructure and CI/CD",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "d7fadb7a0c3268a6410c",
+      "status": "new",
+      "job": {
+        "title": "Associate SOC Analyst",
+        "company": "UltraViolet Cyber",
+        "url": "https://jobs.lever.co/uvcyber/f36583e7-763c-4fa8-9f1d-73d7a7074738",
+        "location": "United States \u00b7 Remote",
+        "category": "Security Analyst",
+        "country": "US",
+        "experience": "0\u20132 years accepted; zero years meets the stated minimum",
+        "minimum_years": 0,
+        "checked_on": "2026-10-09",
+        "salary": "$60,000\u2013$72,000/year",
+        "description": "Monitor alerts, triage security incidents and document investigations. US citizenship, networking and operating-system knowledge are required, alongside security-monitoring and SIEM familiarity. Rotating shifts may be assigned. A degree, entry certifications and scripting are preferred. Security monitoring, threat knowledge, SIEM and shift availability need confirmation.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 55.56,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "US citizenship",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Core networking and Internet protocols",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Security monitoring and analysis fundamentals",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Knowledge of vulnerabilities and attacker methods",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Familiarity with a SIEM platform",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Technical troubleshooting",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Windows and Linux infrastructure",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Clear written reports and verbal communication",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Availability for a rotating 24/7 shift schedule",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Relevant degree",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Python or PowerShell scripting",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Security certification",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "6aea0f9ebef0bd9e40f3",
+      "status": "new",
+      "job": {
+        "title": "Programmer Analyst \u2014 Entry-Level Marketing Analytics",
+        "company": "DataLab USA",
+        "url": "https://jobs.lever.co/datalabusa/4bc04d86-bef3-40c8-a410-b0d0c41a683d",
+        "location": "Germantown, MD \u00b7 Hybrid",
+        "category": "Data Analyst",
+        "country": "US",
+        "experience": "Experience is preferred, not required",
+        "minimum_years": 0,
+        "checked_on": "2026-10-09",
+        "salary": "$65,000\u2013$75,000/year",
+        "description": "Support data quality checks, report generation and marketing analytics. Requires a related bachelor degree, readiness to learn SQL, Tableau and scheduling tools, Office familiarity and teamwork. Experience is optional. The application asks whether you live within 25 miles of Germantown. Locality, Office proficiency and remaining soft-skill requirements need confirmation; employer screening applies.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 50.0,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "Relevant technical bachelor degree",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Readiness to learn SQL, Tableau and scheduling tools",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Microsoft Outlook, Word and Excel familiarity",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Attention to detail in quality checks",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Clear communication",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Self-directed motivation",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Interpersonal teamwork",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "US work authorization without sponsorship",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Employer locality question: within 25 miles of Germantown",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Ability to satisfy employer background and drug screening",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Work or direct-marketing experience and technical training",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "0dd7364cd9714072a243",
+      "status": "new",
+      "job": {
+        "title": "Data Analyst (Entry-Level)",
+        "company": "Recidiviz",
+        "url": "https://job-boards.greenhouse.io/recidiviz/jobs/4717510006",
+        "location": "United States \u00b7 Remote, New York City or Oakland, CA",
+        "category": "Data Analyst",
+        "country": "US",
+        "experience": "6 months practical data analysis; internships and research count",
+        "minimum_years": 0.5,
+        "checked_on": "2026-10-09",
+        "salary": "$85,000/year",
+        "description": "Analyze criminal-justice datasets, support product launches and prepare visualizations. Requires practical experience cleaning and analyzing real datasets, SQL proficiency including joins and window functions, Python/Pandas familiarity, and collaborative communication. Internships, research and equivalent part-time work count toward the six-month minimum. Occasional travel to state partners, including correctional facilities, may be required. BI tools and public-sector data experience are preferred.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 37.5,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "Communicate and collaborate with partners",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Interest in working with diverse criminal-justice partners",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Careful inspection and validation of data",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Six months analyzing and cleaning real datasets",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "SQL joins, aggregates and window functions",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Python with Pandas for analysis",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Occasional travel to partner correctional facilities",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "US work authorization without sponsorship",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "BI tools and public-sector data familiarity",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ee9262586da69b118ce3",
+      "status": "new",
+      "job": {
+        "title": "Quality Engineer I",
+        "company": "Baxter",
+        "url": "https://jobs.baxter.com/en/job/cleveland/quality-engineer-i/152/99124653584",
+        "location": "Cleveland, Mississippi \u00b7 Manufacturing site",
+        "category": "Quality Engineer",
+        "country": "US",
+        "experience": "0\u20131 year related experience; co-op experience accepted",
+        "minimum_years": 0,
+        "checked_on": "2026-10-05",
+        "salary": "$76,000\u2013$95,000/year",
+        "description": "Entry-level manufacturing quality role supporting process and system validation, statistical studies, documentation and quality improvement. Requires a bachelor\u2019s degree in engineering, computer science or a core science. Related co-op experience counts. Specialized manufacturing software and quality certifications are desirable. Review the employer\u2019s physical and visual requirements before applying. Requisition 207462. Application form could not be verified on this run. Visual acuity, physical job conditions and manufacturing statistics skills remain unconfirmed.",
+        "description_kind": "summary",
+        "requirements_reviewed": false
+      },
+      "match": {
+        "score": 0,
+        "assessed": false,
+        "eligible": false,
+        "reasons": [
+          "Application availability needs verification",
+          "Posting needs a fresh availability check",
+          "Full requirements have not yet been assessed"
+        ],
+        "requirements": []
+      }
+    },
+    {
+      "id": "4706a0417e0fe96a07b7",
+      "status": "new",
+      "job": {
+        "title": "Quality Engineer (AI & Test Automation)",
+        "company": "Cognizant",
+        "url": "https://careers.cognizant.com/us-en/jobs/46858/quality-engineer-ai-test-automation/",
+        "location": "Dallas/Plano, TX; Charlotte/Cary, NC; Teaneck, NJ; Miami, FL \u00b7 Onsite",
+        "category": "Quality Engineer",
+        "country": "US",
+        "experience": "0\u20131 year in quality assurance or quality engineering",
+        "minimum_years": 0,
+        "checked_on": "2026-10-05",
+        "salary": "$65,000/year",
+        "description": "Support automated testing of software and AI applications using Java, Python, APIs and SQL. Requires a relevant technical degree or equivalent experience, practical automation work, Agile/STLC knowledge, and exposure to CI/CD, performance testing, cloud platforms and Docker. Office assignment depends on business needs; relocation may be needed. The posting accepts applications on an ongoing basis but still mentions an August 2026 start: confirm the current intake with the employer. Application verification stopped at the employer cookie/privacy screen. Hybrid automation framework and performance-testing experience need confirmation.",
+        "description_kind": "summary",
+        "requirements_reviewed": false
+      },
+      "match": {
+        "score": 0,
+        "assessed": false,
+        "eligible": false,
+        "reasons": [
+          "Application availability needs verification",
+          "Posting needs a fresh availability check",
+          "Full requirements have not yet been assessed"
+        ],
+        "requirements": []
+      }
+    },
+    {
+      "id": "38caafabc84db1f1f43a",
+      "status": "new",
+      "job": {
+        "title": "OSOC Security Analyst - Cloud Pentesting",
+        "company": "Evolve Security",
+        "url": "https://apply.workable.com/evolve-security/j/862A8C87BC/apply/",
+        "location": "United States \u00b7 Remote",
+        "category": "Security Analyst",
+        "country": "US",
+        "experience": "0\u20131 year IT/security and penetration testing; education/labs count",
+        "minimum_years": 0,
+        "checked_on": "2026-10-05",
+        "source_url": "https://www.indeed.com/viewjob?jk=ae39f9c79f59cb5e",
+        "salary": "$50,000/year",
+        "description": "Help assess cloud and application vulnerabilities, validate findings, document remediation and work with clients. The employer-posted Indeed description requires Security+, cloud security fundamentals, hands-on exposure to offensive tools, command-line and scripting skills, and clear communication. Educational and lab experience can support the testing requirements. The employer application page is linked; full requirements were checked in the Indeed listing because the Workable description could not be retrieved. Current Workable page content could not be verified. Security+ and cloud offensive-tool exposure need confirmation.",
+        "description_kind": "summary",
+        "requirements_reviewed": false
+      },
+      "match": {
+        "score": 0,
+        "assessed": false,
+        "eligible": false,
+        "reasons": [
+          "Application availability needs verification",
+          "Posting needs a fresh availability check",
+          "Full requirements have not yet been assessed"
+        ],
+        "requirements": []
+      }
+    }
+  ]
+}
