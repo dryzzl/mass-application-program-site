@@ -1,8 +1,338 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-10T18:22:46.584457+00:00",
-  "coverage": "Partial refresh: checked 7 saved postings and 8 additional employer leads across all four categories. No new verified 90% matches. Four saved application forms verified; three remain unverified. Baxter link returned 404. Not an exhaustive market search.",
+  "updated_at": "2026-10-11T19:18:06.362505+00:00",
+  "coverage": "Partial refresh: rechecked 7 saved postings and inspected 8 additional employer leads across the four categories. Added 2 verified alternatives; no new verified 90% matches. Six application forms verified in total; three older listings remain unverified. Fewer than 10 leads per category inspected; not an exhaustive US market search.",
   "rows": [
+    {
+      "id": "c8e8e29cbe73c5dd1e32",
+      "status": "new",
+      "job": {
+        "title": "Junior Quality Engineer",
+        "company": "Striveworks",
+        "url": "https://job-boards.greenhouse.io/striveworks/jobs/8001370003",
+        "location": "Austin, TX - Hybrid / Onsite",
+        "category": "Quality Engineer",
+        "country": "US",
+        "experience": "0-2 years; zero years accepted with relevant degree or boot camp",
+        "minimum_years": 0,
+        "checked_on": "2026-10-11",
+        "salary": "$85,000-$100,000/year",
+        "description": "Junior software testing role with a relevant degree or boot camp and 0-2 years of experience. Requires programming basics, testing methodology, analytical skills, attention to detail and technical communication. US citizenship and eligibility and willingness to obtain and maintain a Secret-or-higher clearance are mandatory. Hybrid/onsite in Austin. Clearance eligibility and willingness, and Austin work availability need confirmation.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 75.0,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "Relevant engineering/science bachelor degree or software boot camp",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Core programming concepts and basic language proficiency",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Software testing concepts and methodology",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Problem solving and analytical skills",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Attention to detail",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Clear technical communication in writing and conversation",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "US citizenship plus eligibility and willingness to obtain and maintain Secret-or-higher clearance",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Willing and able to work hybrid/onsite in Austin",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Test automation tools",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Modern development tools and processes",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "JavaScript, TypeScript, Python or Go",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "SQL and relational databases",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Container tools",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Machine learning or data science exposure",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Technology delivery in secure government environments",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Active Secret-or-higher clearance",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "48fb4bd2ec5f8cbecf0c",
+      "status": "new",
+      "job": {
+        "title": "Junior Data Analyst",
+        "company": "Calibrate",
+        "url": "https://ats.rippling.com/calibrate/jobs/47fed77d-d373-46f6-9380-08ea4602a3a1",
+        "location": "United States - Remote",
+        "category": "Data Analyst",
+        "country": "US",
+        "experience": "0-2 years; internships, research or similar analytical experience accepted",
+        "minimum_years": 0,
+        "checked_on": "2026-10-11",
+        "salary": "$60,000-$65,000/year",
+        "description": "Remote US analyst role supporting operational reporting, dashboards and data quality. Accepts 0-2 years, including internships or academic research. Requires basic SQL, Excel or Google Sheets analysis, attention to accuracy, analytical problem solving, clear communication and eagerness to learn in a collaborative environment. Spreadsheet analysis experience and learning interest need confirmation. BI tools, Python/R and healthcare exposure are preferred.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 71.43,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "Working SQL knowledge and basic queries",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Excel or Google Sheets data analysis and manipulation",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Attention to detail and data accuracy",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Analytical thinking and problem solving",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Communicate findings to technical and nontechnical audiences",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Eagerness to learn in a fast-paced collaborative environment",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "US work authorization",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Business intelligence tool exposure",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Clinical data experience",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Basic Python or R familiarity",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Healthcare industry experience or interest",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Version control",
+            "passed": true,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Data warehousing or engineering concepts",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Ability to work fully remotely",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
     {
       "id": "bff5cc60521db4c94d61",
       "status": "new",
@@ -15,7 +345,7 @@
         "country": "US",
         "experience": "0\u20131 year as a software engineer",
         "minimum_years": 0,
-        "checked_on": "2026-10-10",
+        "checked_on": "2026-10-11",
         "salary": "$100,000\u2013$120,000/year",
         "description": "Develop an enterprise AI platform and collaborate on customer deployments. Requires backend programming fluency, a modern web stack, strong problem-solving and communication, and a completed LLM-based project or integration. A related technical bachelor\u2019s degree is listed, with demonstrated ability emphasized. Production cloud and CI/CD experience are preferred. This is an office-based role.",
         "description_kind": "summary",
@@ -108,7 +438,7 @@
         "country": "US",
         "experience": "0\u20132 years accepted; zero years meets the stated minimum",
         "minimum_years": 0,
-        "checked_on": "2026-10-10",
+        "checked_on": "2026-10-11",
         "salary": "$60,000\u2013$72,000/year",
         "description": "Monitor alerts, triage security incidents and document investigations. US citizenship, networking and operating-system knowledge are required, alongside security-monitoring and SIEM familiarity. Rotating shifts may be assigned. A degree, entry certifications and scripting are preferred. Security monitoring, threat knowledge, SIEM and shift availability need confirmation.",
         "description_kind": "summary",
@@ -246,7 +576,7 @@
         "country": "US",
         "experience": "Experience is preferred, not required",
         "minimum_years": 0,
-        "checked_on": "2026-10-10",
+        "checked_on": "2026-10-11",
         "salary": "$65,000\u2013$75,000/year",
         "description": "Support data quality checks, report generation and marketing analytics. Requires a related bachelor degree, readiness to learn SQL, Tableau and scheduling tools, Office familiarity and teamwork. Experience is optional. The application asks whether you live within 25 miles of Germantown. Locality, Office proficiency and remaining soft-skill requirements need confirmation; employer screening applies.",
         "description_kind": "summary",
@@ -375,7 +705,7 @@
         "country": "US",
         "experience": "6 months practical data analysis; internships and research count",
         "minimum_years": 0.5,
-        "checked_on": "2026-10-10",
+        "checked_on": "2026-10-11",
         "salary": "$85,000/year",
         "description": "Analyze criminal-justice datasets, support product launches and prepare visualizations. Requires practical experience cleaning and analyzing real datasets, SQL proficiency including joins and window functions, Python/Pandas familiarity, and collaborative communication. Internships, research and equivalent part-time work count toward the six-month minimum. Occasional travel to state partners, including correctional facilities, may be required. BI tools and public-sector data experience are preferred.",
         "description_kind": "summary",
@@ -488,7 +818,7 @@
         "minimum_years": 0,
         "checked_on": "2026-10-05",
         "salary": "$76,000\u2013$95,000/year",
-        "description": "Manufacturing quality role previously listed with a relevant technical bachelor degree and 0\u20131 year of related experience. The employer link returned 404 on October 10; the alternate application endpoint could not be verified. Availability is uncertain. Keep on hold pending confirmation; visual acuity, physical conditions and manufacturing statistics requirements also need review.",
+        "description": "Manufacturing quality role previously listed with a relevant technical bachelor degree and 0\u20131 year of related experience. The employer link returned 404 on October 11; the alternate application endpoint could not be verified. Availability is uncertain. Keep on hold pending confirmation; visual acuity, physical conditions and manufacturing statistics requirements also need review.",
         "description_kind": "summary",
         "requirements_reviewed": false
       },
