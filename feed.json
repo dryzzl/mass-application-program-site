@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-12T14:07:28.985812+00:00",
-  "coverage": "Partial refresh: rechecked 9 saved postings and inspected 8 additional employer leads across all four categories. Seven saved application forms verified; Cognizant and Baxter remain unverified. Evolve application is now verified, with mandatory qualification gaps. No new verified 90% matches. Fewer than 10 leads per category inspected; not exhaustive US coverage.",
+  "updated_at": "2026-10-13T17:46:36.004373+00:00",
+  "coverage": "Partial refresh: rechecked 9 saved postings and inspected 5 additional employer leads across all four categories. Added PerfectServe as a verified alternative; no verified 90% matches. Eight application forms verified in total; Cognizant and Baxter remain unverified. Fewer than 10 leads per category inspected; not exhaustive US coverage.",
   "rows": [
     {
       "id": "c8e8e29cbe73c5dd1e32",
@@ -15,7 +15,7 @@
         "country": "US",
         "experience": "0-2 years; zero years accepted with relevant degree or boot camp",
         "minimum_years": 0,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "salary": "$85,000-$100,000/year",
         "description": "Junior software testing role with a relevant degree or boot camp and 0-2 years of experience. Requires programming basics, testing methodology, analytical skills, attention to detail and technical communication. US citizenship and eligibility and willingness to obtain and maintain a Secret-or-higher clearance are mandatory. Hybrid/onsite in Austin. Clearance eligibility and willingness, and Austin work availability need confirmation.",
         "description_kind": "summary",
@@ -189,7 +189,7 @@
         "country": "US",
         "experience": "0-2 years; internships, research or similar analytical experience accepted",
         "minimum_years": 0,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "salary": "$60,000-$65,000/year",
         "description": "Remote US analyst role supporting operational reporting, dashboards and data quality. Accepts 0-2 years, including internships or academic research. Requires basic SQL, Excel or Google Sheets analysis, attention to accuracy, analytical problem solving, clear communication and eagerness to learn in a collaborative environment. Spreadsheet analysis experience and learning interest need confirmation. BI tools, Python/R and healthcare exposure are preferred.",
         "description_kind": "summary",
@@ -345,7 +345,7 @@
         "country": "US",
         "experience": "0\u20131 year as a software engineer",
         "minimum_years": 0,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "salary": "$100,000\u2013$120,000/year",
         "description": "Develop an enterprise AI platform and collaborate on customer deployments. Requires backend programming fluency, a modern web stack, strong problem-solving and communication, and a completed LLM-based project or integration. A related technical bachelor\u2019s degree is listed, with demonstrated ability emphasized. Production cloud and CI/CD experience are preferred. This is an office-based role.",
         "description_kind": "summary",
@@ -427,6 +427,108 @@
       }
     },
     {
+      "id": "ef7fd6ba7b41c0753545",
+      "status": "new",
+      "job": {
+        "title": "Junior QA Engineer - US Remote",
+        "company": "PerfectServe",
+        "url": "https://job-boards.greenhouse.io/perfectserve/jobs/6188132004",
+        "location": "United States - Remote",
+        "category": "Quality Engineer",
+        "country": "US",
+        "experience": "Relevant technical bachelor degree accepted instead of prior experience; no numerical experience minimum",
+        "minimum_years": 0,
+        "checked_on": "2026-10-13",
+        "salary": "$75,000-$115,000/year",
+        "description": "US-remote junior QA role. A relevant technical bachelor degree can replace prior technical experience. Requires SDLC or Agile basics, automation familiarity, programming exposure and cross-functional communication. Work includes manual and automated testing and on-camera meetings when expected. Growth interest, work expectations and the posting's assignment-dependent physical conditions need confirmation; reasonable accommodations are available. Health IT experience is preferred.",
+        "description_kind": "summary",
+        "requirements_reviewed": true
+      },
+      "match": {
+        "score": 57.14,
+        "assessed": true,
+        "eligible": false,
+        "reasons": [
+          "Below match threshold",
+          "Mandatory qualification is missing or unknown"
+        ],
+        "requirements": [
+          {
+            "text": "Related technical bachelor degree or prior relevant technical experience",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Basic SDLC or Agile delivery knowledge",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Automation concepts and interest in developing automation skills",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Programming or scripting exposure",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Communication and cross-functional teamwork",
+            "passed": true,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Supported by the private profile"
+            ]
+          },
+          {
+            "text": "Willingness to switch between manual and automated testing and attend on-camera meetings",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Ability to meet applicable physical/visual job conditions with reasonable accommodation as needed; clarify assignment-specific lifting/travel",
+            "passed": false,
+            "mandatory": true,
+            "preferred": false,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          },
+          {
+            "text": "Health IT experience",
+            "passed": false,
+            "mandatory": false,
+            "preferred": true,
+            "evidence": [
+              "Not established by the private profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "d7fadb7a0c3268a6410c",
       "status": "new",
       "job": {
@@ -438,7 +540,7 @@
         "country": "US",
         "experience": "0\u20132 years accepted; zero years meets the stated minimum",
         "minimum_years": 0,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "salary": "$60,000\u2013$72,000/year",
         "description": "Monitor alerts, triage security incidents and document investigations. US citizenship, networking and operating-system knowledge are required, alongside security-monitoring and SIEM familiarity. Rotating shifts may be assigned. A degree, entry certifications and scripting are preferred. Security monitoring, threat knowledge, SIEM and shift availability need confirmation.",
         "description_kind": "summary",
@@ -576,7 +678,7 @@
         "country": "US",
         "experience": "Experience is preferred, not required",
         "minimum_years": 0,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "salary": "$65,000\u2013$75,000/year",
         "description": "Support data quality checks, report generation and marketing analytics. Requires a related bachelor degree, readiness to learn SQL, Tableau and scheduling tools, Office familiarity and teamwork. Experience is optional. The application asks whether you live within 25 miles of Germantown. Locality, Office proficiency and remaining soft-skill requirements need confirmation; employer screening applies.",
         "description_kind": "summary",
@@ -705,7 +807,7 @@
         "country": "US",
         "experience": "6 months practical data analysis; internships and research count",
         "minimum_years": 0.5,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "salary": "$85,000/year",
         "description": "Analyze criminal-justice datasets, support product launches and prepare visualizations. Requires practical experience cleaning and analyzing real datasets, SQL proficiency including joins and window functions, Python/Pandas familiarity, and collaborative communication. Internships, research and equivalent part-time work count toward the six-month minimum. Occasional travel to state partners, including correctional facilities, may be required. BI tools and public-sector data experience are preferred.",
         "description_kind": "summary",
@@ -816,7 +918,7 @@
         "country": "US",
         "experience": "0\u20131 year IT/security and penetration testing; education/labs count",
         "minimum_years": 0,
-        "checked_on": "2026-10-12",
+        "checked_on": "2026-10-13",
         "source_url": "https://apply.workable.com/evolve-security/j/862A8C87BC/",
         "salary": "$50,000/year",
         "description": "US remote cloud penetration-testing role accepting 0-1 year of IT and security-testing experience, including education. Application is open. Mandatory Security+ and hands-on cloud offensive-tool exposure are not established. The requirements also mention ESCP without clarifying whether it is required. Cloud testing, client consulting/negotiation and independent working need confirmation.",
@@ -957,7 +1059,7 @@
         "minimum_years": 0,
         "checked_on": "2026-10-05",
         "salary": "$76,000\u2013$95,000/year",
-        "description": "Manufacturing quality role previously listed with a relevant technical bachelor degree and 0\u20131 year of related experience. The employer link returned 404 on October 12; the alternate application endpoint could not be verified. Availability is uncertain. Keep on hold pending confirmation; visual acuity, physical conditions and manufacturing statistics requirements also need review.",
+        "description": "Manufacturing quality role previously listed with a relevant technical bachelor degree and 0\u20131 year of related experience. The employer link returned 404 on October 13; the alternate application endpoint could not be verified. Availability is uncertain. Keep on hold pending confirmation; visual acuity, physical conditions and manufacturing statistics requirements also need review.",
         "description_kind": "summary",
         "requirements_reviewed": false
       },
@@ -987,7 +1089,7 @@
         "minimum_years": 0,
         "checked_on": "2026-10-05",
         "salary": "$65,000/year",
-        "description": "Support automated testing of software and AI applications using Java, Python, APIs and SQL. Requires a relevant technical degree or equivalent experience, practical automation work, Agile/STLC knowledge, and exposure to CI/CD, performance testing, cloud platforms and Docker. Office assignment depends on business needs; relocation may be needed. The posting accepts applications on an ongoing basis but still mentions an August 2026 start: confirm the current intake with the employer. The employer page returned access denied on October 12; application availability remains unverified. Hybrid automation framework and performance-testing experience need confirmation.",
+        "description": "Support automated testing of software and AI applications using Java, Python, APIs and SQL. Requires a relevant technical degree or equivalent experience, practical automation work, Agile/STLC knowledge, and exposure to CI/CD, performance testing, cloud platforms and Docker. Office assignment depends on business needs; relocation may be needed. The posting accepts applications on an ongoing basis but still mentions an August 2026 start: confirm the current intake with the employer. The employer page returned access denied on October 13; application availability remains unverified. Hybrid automation framework and performance-testing experience need confirmation.",
         "description_kind": "summary",
         "requirements_reviewed": false
       },
